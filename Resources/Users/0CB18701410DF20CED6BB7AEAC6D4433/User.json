@@ -1,0 +1,13 @@
+{
+	"Username": "Federico",
+	"Id": "0CB18701410DF20CED6BB7AEAC6D4433",
+	"ImgShowPeriod": 1.5,
+	"ImagePaths": [
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/0CB18701410DF20CED6BB7AEAC6D4433/Images/badluckbrian.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/0CB18701410DF20CED6BB7AEAC6D4433/Images/breakingbad.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/0CB18701410DF20CED6BB7AEAC6D4433/Images/diobrando.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/0CB18701410DF20CED6BB7AEAC6D4433/Images/haikyuu.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/0CB18701410DF20CED6BB7AEAC6D4433/Images/Paolo_Bottoni.jpg"
+	],
+	"UserImagesPositions": [ false, true, false, true, true ]
+}

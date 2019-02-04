@@ -1,0 +1,13 @@
+{
+	"Username": "dm",
+	"Id": "46CE7DC640248249673C87BC281A03EE",
+	"ImgShowPeriod": 1.5,
+	"ImagePaths": [
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/46CE7DC640248249673C87BC281A03EE/Images/h1-preliminary1-445.jpeg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/46CE7DC640248249673C87BC281A03EE/Images/IMG_6224-ARTY-Z7-Obl-600-600x454.png",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/46CE7DC640248249673C87BC281A03EE/Images/jB4NT.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/46CE7DC640248249673C87BC281A03EE/Images/maxresdefault (1).jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/46CE7DC640248249673C87BC281A03EE/Images/maxresdefault.jpg"
+	],
+	"UserImagesPositions": [ false, true, false, true, true ]
+}

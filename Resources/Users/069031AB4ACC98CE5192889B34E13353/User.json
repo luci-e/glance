@@ -1,0 +1,13 @@
+{
+	"Username": "Francesco",
+	"Id": "069031AB4ACC98CE5192889B34E13353",
+	"ImgShowPeriod": 1.5,
+	"ImagePaths": [
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/069031AB4ACC98CE5192889B34E13353/Images/IMG_20170722_215900.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/069031AB4ACC98CE5192889B34E13353/Images/IMG_20170723_060959.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/069031AB4ACC98CE5192889B34E13353/Images/IMG_20170817_191541.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/069031AB4ACC98CE5192889B34E13353/Images/IMG_20180121_185603.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/069031AB4ACC98CE5192889B34E13353/Images/IMG_20180330_135842.jpg"
+	],
+	"UserImagesPositions": [ false, true, false, true, true ]
+}

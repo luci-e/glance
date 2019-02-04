@@ -1,0 +1,13 @@
+{
+	"Username": "Emiliano",
+	"Id": "CAC878294F3C09DB2F993EB68A6438C5",
+	"ImgShowPeriod": 1.5,
+	"ImagePaths": [
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/CAC878294F3C09DB2F993EB68A6438C5/Images/test (1).jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/CAC878294F3C09DB2F993EB68A6438C5/Images/test (1).PNG",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/CAC878294F3C09DB2F993EB68A6438C5/Images/test (5).jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/CAC878294F3C09DB2F993EB68A6438C5/Images/test (6).jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/CAC878294F3C09DB2F993EB68A6438C5/Images/test (7).jpg"
+	],
+	"UserImagesPositions": [ false, true, false, true, true ]
+}

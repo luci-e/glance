@@ -1,0 +1,13 @@
+{
+	"Username": "yarek",
+	"Id": "80D130ED460F2DE375A38187EC3489C3",
+	"ImgShowPeriod": 1.5,
+	"ImagePaths": [
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/80D130ED460F2DE375A38187EC3489C3/Images/15321895307068.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/80D130ED460F2DE375A38187EC3489C3/Images/8160.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/80D130ED460F2DE375A38187EC3489C3/Images/ec151e3befc74bdbbfd89fb1ae5335a8.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/80D130ED460F2DE375A38187EC3489C3/Images/harvey2.jpg",
+		"../../../../../../Users/lucie/source/unreal/Glance/./Resources/Users/80D130ED460F2DE375A38187EC3489C3/Images/jcr_content.jpg"
+	],
+	"UserImagesPositions": [ false, true, false, true, true ]
+}
