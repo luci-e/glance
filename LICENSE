@@ -22,3 +22,9 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org>
+
+----------------------------------------------------------------------------------------------------
+
+You have to respect OpenFace, boost, TBB, dlib, OpenBLAS, and OpenCV licenses.
+
+Furthermore you have to respect the licenses of the datasets used for model training - https://github.com/TadasBaltrusaitis/OpenFace/wiki/Datasets
