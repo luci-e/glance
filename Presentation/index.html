@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Insert Title Here. --> 
+    <title>Glance</title>
+
+    <meta name="author" content="Emiliano">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+   
+    <div id="slide_container">
+        <!-- This is the cover slide There should be only one. --> 
+        <div class="slideWrap" id="cover_slide">
+            <div class="slide_content">
+                <div id="cover_title">Glance: a gaze based biometric and multimodal system</div>
+                <div id="cover_advisor">
+                    Biometric Systems & Multimodal Interaction
+                    <br> 2018-2019
+                </div>
+                <div id="cover_candidate"> Emiliano Luci
+                    <br> 1665528 </div>
+            </div>
+        </div>
+
+        <!-- This is an inner slide There can be as many as you like. --> 
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Introduction
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>Sight is one of the predominant way we acquire information about our surroundings</li>
+                        <li>Our eyes are extremely well adapted to acquire images in the visible part of the spectrum, thanks to the cones, a specialized type of photoreceptor</li>
+                        <li>However only a small area of the retina is densely packed with cones, the fovea centralis</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Introduction (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <img src="img/retina.jpg" style="width:100%;"/>
+                        <li>The image shows cross sections of a human retina respectively in the fovea (A) and the peripheral region (B) </li>
+                        <li>Also notice the nice scutoidal arrangment of the cells isn't it neat?</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Introduction (2)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>But we do not see the world as a coloured spot so what gives?</li>
+                        <li>The eyes are constantly moving to compose a patchwork of detailed images by further processing in the brain</li>
+                        <li>These small movements are called saccades because the movement is a very quick jerk between fixation points</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Introduction (3)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <img src="img/foveal_rendering.jpg" style="width:100%;"/>
+                        <li>This is very useful if we're desperately trying to achieve those sweet FPS since we only need to render at full resolution the part of the images that we're currently looking at</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Gaze Tracking
+                </div>
+                <div class="slide_text">
+
+                    <ul>
+                    <div class="column_div">
+                        <img src="img/eye_vr.jpg" style="width:50%; align-self:center;"/>
+                    </div>
+                        <li>Tracking the eyes is essential for the aforementioned case and can be useful in plethora of other settings</li>
+                        <li>Analysing the way we carry out visual tasks can help us better design the task itself or the technology built around it</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    An Example from the Past
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/the_visitor.jpg" style="width:70%; align-self:center;"/>
+                        </div>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    An Example from the Present
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="row_div">
+                            <img src="img/reddit.png" style="width:30%;"/>
+                            <img src="img/golden_triangle.png" style="width:45%;"/>
+                        </div>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    An Example from the Present (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/heatmap.jpg" style="width:100%; align-self:center;"/>
+                        </div>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Behavioral biometrics
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>Clearly there are lots of similarities in the way people perform a visual task. Possibly some of them are hard wired ( the way we scan a face for example ).</li>
+                        <li>However the scan patterns of people are still unique to them.</li>
+                        <li>Furthermore we can hypothize that cultural upbringing introduces biases in the way some tasks are carried on. E.g. : reading some text written in a different language not using a latin script.</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Behavioral biometrics (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>The question we tried to answer is: can we design a task that is: 
+                        <ul>
+                            <li>Simple : every normal sighted person can perform it</li>
+                            <li>Unobtrusive : it should be carried out in normal conditions </li>
+                            <li>Reproducible : the result should stay consistent though time</li>
+                        </ul>
+                        and from which we can collect data that gives a feature vector rich enough to distinguish a person from another? That is can we design a visual task such that data collected during its performance is a behavioral biometric trait ?
+                        </li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Glance
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>Glance is an attempt at designing such a task</li>
+                        <li>It exploits the way people look at familiar faces vs random images, extrapolating from faces to familiar images in general</li>
+                        <li>We will see how it works and well it performs </li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Glance (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+
+                       <div class="column_div">
+                            <img src="img/screen3D.png" style="width:75%; align-self:center;"/>
+                        </div>
+
+
+                        <li>Glance is built on top of Unreal Engine</li>
+                        <li>Mainly for code organization purposes, but also for design reasons</li>
+                        <li>Eye tracking has a deep connection with VR</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Glance (2)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/unity_vr.png" style="width:60%; align-self:center;"/>
+                        </div>
+                        <li>How do you design a program that is meant to be used in a virtual environment ?</li>
+                        <li>Do you just place a 2D UI in a 3D world or try to build it in a deeply different way?</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Architectural Schema
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/class_schema.png" style="width:100%; align-self:center;"/>
+                        </div>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Camera Tracking
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/nn.png" style="width:70%; align-self:center;"/>
+                        </div>
+                        <li>Since we're stuck with a screen and a cheap camera how do we perform gaze tracking? </li>
+                        <li>Like many other computer vision problems, turns out that well trained neural networks are extremely good at them.</li>
+                        <li>The OpenFace framework uses a trained CNN to get landmarks that gives us the pose, face, and gaze vectors of a person, all from a 2D image!</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Calibration
+                </div>
+                <div class="slide_text">
+                    <ul>
+                       <div class="column_div">
+                            <img src="img/interpolation.png" style="width:70%; align-self:center;"/>
+                        </div>
+
+                        <li>In order to get a better idea of where the user is actually looking we can go through a calibration process</li>
+                        <li>The calibration splits the screen into quadrants in order to narrow down the error to the quadrant instead of the whole screen</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Task
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/enrolment_platform.png" style="width:70%; align-self:center;"/>
+                        </div>
+                        <li>The task that we designed builds a trace of the user gaze during the enrolment that will be used later as a template for the verification process. We do not perform identification with this!</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Task (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+
+                        <li>The enrolment is made up of 3 phases: 
+                            <ul>
+                                <li>Image selection</li>
+                                <li>Trace Recording</li>
+                                <li>Face Pictures Capture</li>
+                            </ul>
+                        </li>
+                        <li>The User must first select 5 images that they deem familiar, i.e., they can recognize at a glance (ba dum tss) </li>
+                        <li>The system then start a slideshow of the user images next to neutral images, the relative positions are random</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Task (2)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/gaze_over_time.png" style="width:70%; align-self:center;"/>
+                        </div>
+                        <li>The system traces the user gaze during the slideshow building a list of vectors of the gaze yaw and pitch</li>
+                        <li>This corresponds to our feature vectors</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Task (3)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/lbph.png" style="width:100%; align-self:center;"/>
+                        </div>
+                        <li>Finally the system collects picture of the user's face. This pictures are used to make the identity claim</li>
+                        <li>We use LBPH for face recognition, using the contrib module Face from OpenCV</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Identification and verification
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>The identification process is carried out by the LBPH Face Recognizer. The output is the user and the ocnfidence of the prediction</li>
+                        <li>We take the confidence and, a bit wastefully, throw it away. That's ok, a user that passed the first phase still has to back up their claim during the verification phase!</li>
+                        <li>We could probably exclude some users a priori using just this score but that's not the purpose of what we're testing.</li>
+                        <li>Still some form of multibiometric would make sense in this case</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Identification and verification (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class="column_div">
+                            <img src="img/random_trace.png" style="width:100%; align-self:center;"/>
+                        </div>
+                        <li>Now the user is shown the same slideshow that their claimed identity went through during the enrolment</li>
+                        <li>If the user is who they claim to be they will probably (they do) produce a trace that is similar enough to the template we are testing against</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Identification and verification (2)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                       <div class="column_div">
+                            <img src="img/dtw.gif" style="width:100%; align-self:center;"/>
+                        </div>
+                        <li>So now we have 2 lists of timestamped 2D vectors, we need some sort of similarity score between them, that is we need a distance function in the space of $n\times2$ matrices</li>
+                        <li>A natural way would be just summing the element wise distance. This is bad. We thus utilise Dynamic Time Warping to get rid of scale and translational differences.</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Results
+                </div>
+                <div class="slide_text">
+                    <ul>
+
+                       <div class="column_div">
+                            <img src="img/probes.png" style="width:60%; align-self:center;"/>
+                        </div>
+
+                        <li>So it this system good? Unfortunately we didn't have nearly enough test subjects to draw conclusive results but we can still report what we found</li>
+
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Results (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                       <div class="column_div">
+                            <img src="img/roc.png" style="width:70%; align-self:center;"/>
+                        </div>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Results (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                       <div class="column_div">
+                            <img src="img/eer.png" style="width:90%; align-self:center;"/>
+                        </div>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Game
+                </div>
+                <div class="slide_text">
+                    <ul>
+
+                       <div class="column_div">
+                            <img src="img/debug_level.png" style="width:70%; align-self:center;"/>
+                        </div>
+
+                        <li>It makes sense that one's gaze can be used as an input device.</li>
+                        <li>Sometimes "makes sense" is not enough though.</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Game (1)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>The previous screenshot shows how we can use the gaze to get what the user is looking at in a first person game</li>
+                        <li>We can use this information in a variety of way: highliting in game obejct, aiming, special interaction etc.</li>
+                        <li>However we are subject to some strict restrictions</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Game (2)
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <li>In particular
+                            <ul>
+                                <li>The gaze vector must not bounce around</li>
+                                <li>The update rate must be fast enough</li>
+                                <li>( Optional ) Performing gaze tracking should be computationally cheap</li>
+                            </ul>
+                        </li>
+
+                        <li>Some of these problems can be solved for others we must perform a tradeoff</li>
+                        <li>In any case the raw data must be subject to some kind of filtering since it is extremely jittery and we don't want our users to get a headache since we're not malicious</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The (Other) Game
+                </div>
+                <div class="slide_text">
+                    <ul>
+                       <div class="column_div">
+                            <img src="img/shooting.png" style="width:70%; align-self:center;"/>
+                        </div>
+                        <li>We fell back on a simpler game to implement which still uses the gaze as an input to control the yaw of a cannon</li>
+                        <li>The aim is to shoot down ships going around the map. A simple counter keeps tracks of the score</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The Ships AI
+                </div>
+                <div class="slide_text">
+                    <ul>
+
+                       <div class="column_div">
+                            <img src="img/path_finding.png" style="width:70%; align-self:center;"/>
+                        </div>
+
+                        <li>The ships are controlled by the AI using a Bug Pathfinding algorithm</li>
+                        <li>This is not an optimal algorithm of course but it is reasonable for when we don't have a priori knowledge of the environment we are moving through.</li>
+                        <li>This class of algorithms is used for example for terrestrial rovers</li>
+
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    Projectile Selection
+                </div>
+                <div class="slide_text">
+                    <ul>
+
+                       <div class="column_div">
+                            <img src="img/wheel_selector.png" style="width:70%; align-self:center;"/>
+                        </div>
+
+                        <li>The user can select the cannon ball to use by pressing a key and looking at the type of projectile they want</li>
+                        <li>The screen is only split in 4 because quadrant selection is less subject to errors.</li>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+        <div class="slideWrap slideWrap-none inner_slide">
+            <div class="slide_content">
+                <div class="inner_title_top">
+                    The End
+                </div>
+                <div class="slide_text">
+                    <ul>
+                        <div class='column_div'>
+                            <img src='img/cake.jpg' style="width:50%; align-self:center;" />
+                        </div>
+                    </ul>
+                </div>
+                <div class="timer_container">
+                    <div class="timer_bar" id="timer_bar_0" data-maxTime="30"></div>
+                </div>
+                <div class="inner_title_bot"></div>
+                <div class="inner_date"></div>
+                <div class="inner_pageno"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
